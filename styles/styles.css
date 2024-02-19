@@ -90,7 +90,9 @@ body {
   justify-self: center;
 }
 .main .gifs_container img {
-  max-width: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
 }
 
 .footer {
