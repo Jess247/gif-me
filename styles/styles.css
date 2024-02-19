@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #0e0e0e;
+  color: #fffffc;
+}
+
+.header {
+  padding: 1.5em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.header .logo-container {
+  position: absolute;
+  left: 2em;
+}
+.header .logo-container .logo-text {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.header .logo-container .logo-text, .header .logo-container .logo-text_offset {
+  font-family: "Montserrat", sans-serif;
+}
+.header .logo-container .logo-text_offset {
+  font-weight: 300;
+  font-size: 1.5em;
+  position: relative;
+  top: 6px;
+  text-decoration: underline;
+}
+.header .main-heading {
+  margin-top: 1.5em;
+  font-size: 3.5em;
+}
+.header .main-heading_span {
+  position: relative;
+  top: 8px;
+  font-weight: 200;
+  text-decoration: underline;
+}
+.header .sub-heading {
+  margin-top: 1em;
+  font-weight: 200;
+}
+
+/*# sourceMappingURL=styles.css.map */
