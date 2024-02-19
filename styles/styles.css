@@ -14,7 +14,6 @@ body {
 .header {
   padding: 1.5em;
   text-align: center;
-  margin-bottom: 2em;
 }
 .header .logo-container {
   position: absolute;
@@ -47,6 +46,59 @@ body {
 .header .sub-heading {
   margin-top: 1em;
   font-weight: 200;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+}
+.main .searchbar {
+  background-color: #fffffc;
+  width: 70%;
+  margin: 0 auto 2.2em auto;
+  height: 2.6em;
+  border-radius: 20px;
+  display: flex;
+}
+.main .searchbar_field {
+  height: 100%;
+  width: 90%;
+  padding: 1em;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  font-size: 1rem;
+}
+.main .searchbar_btn {
+  height: 100%;
+  width: 20%;
+  border-radius: 20px;
+  border: none;
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fffffc;
+  font-size: 1.1rem;
+}
+.main .gifs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+.main .gifs_container {
+  width: 200px;
+  justify-self: center;
+}
+.main .gifs_container img {
+  max-width: 200px;
+}
+
+.footer {
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  padding: 1em;
+  background: #0e0e0e;
 }
 
 /*# sourceMappingURL=styles.css.map */
