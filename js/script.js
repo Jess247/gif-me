@@ -22,9 +22,11 @@ function renderGifs(e) {
     fetch(`https://api.giphy.com/v1/gifs/search?api_key=dXEg9tx5ZJvJFMyxlI6ocE8zXoMEiQsi&q=${keyword}&limit=25&offset=0&rating=g&lang=en&bundle=messaging_non_clips`)
     .then(response => response.json())
     .then(data => {
-        const objLen = Object.keys(data.data).length
-
-        for (let i = 0; i < objLen; i++) {
+        let objLen = Object.keys(data.data).length
+        if (objLen < 50) {
+            objLen = 50
+        }
+        for (let i = 0; i < objLen - 1; i++) {
            document.querySelector('#gifs').innerHTML += `
             <div class="gifs_container">
                     <img src="${data.data[i].images.original.url}" alt="">
