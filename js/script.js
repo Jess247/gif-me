@@ -4,18 +4,6 @@ const searchfield = document.querySelector('#searchfield')
 
 form.addEventListener('submit', renderGifs)
 
-
-    /* 
-        user enters key word
-        on submit
-        add keyword to api url
-        loop through all objects 
-            create img tag 
-            add src
-            add class
-            append
-    */
-
 function renderGifs(e) {
     e.preventDefault()
     const keyword = searchfield.value
@@ -23,7 +11,7 @@ function renderGifs(e) {
     .then(response => response.json())
     .then(data => {
         let objLen = Object.keys(data.data).length
-        if (objLen < 50) {
+        if (objLen > 50) {
             objLen = 50
         }
         for (let i = 0; i < objLen - 1; i++) {

@@ -50,11 +50,12 @@ body {
 
 .main {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 5em auto;
 }
 .main .searchbar {
   background-color: #fffffc;
   width: 70%;
+  max-width: 800px;
   margin: 0 auto 2.2em auto;
   height: 2.6em;
   border-radius: 20px;
@@ -96,12 +97,13 @@ body {
 }
 
 .footer {
+  width: 100%;
+  text-align: center;
   position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   padding: 1em;
-  margin-top: 1em;
   background: #0e0e0e;
 }
 
